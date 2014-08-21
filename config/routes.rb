@@ -1,4 +1,7 @@
 DiseasesMap::Application.routes.draw do
+  resources :locations
+
+
   resources :diseases
 
 
