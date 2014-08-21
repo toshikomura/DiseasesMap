@@ -1,4 +1,7 @@
 DiseasesMap::Application.routes.draw do
+  resources :diseases
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

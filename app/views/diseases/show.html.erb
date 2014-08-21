@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @disease.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @disease.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @disease.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_disease_path(@disease) %> |
+<%= link_to 'Back', diseases_path %>
