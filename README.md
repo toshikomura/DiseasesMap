@@ -1,4 +1,0 @@
-DiseasesMap
-===========
-
-Diseases map
