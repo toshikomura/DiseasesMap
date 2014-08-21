@@ -5,6 +5,8 @@ Application to build diseases on GoogleMaps
 To use application need to execute
 
     rake db:migrate
+    bundle
+    bundle exec rake assets:precompile
     rails server -p"port"
 
 On browser access
