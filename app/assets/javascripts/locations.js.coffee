@@ -1,7 +1,8 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-window.onload = ->
+#window.onload = ->
+$(document).ready(->
   handler = Gmaps.build("Google")
   handler.buildMap
     provider: {}
@@ -20,6 +21,8 @@ window.onload = ->
     ])
     handler.bounds.extendWith markers
     handler.fitMapToBounds()
+    handler.addDirection( { origin: "São Paulo", destination: "Curitiba"})
     return
 
   return
+)
