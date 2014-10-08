@@ -2,13 +2,30 @@
 
 Application to build diseases on GoogleMaps
 
+Do you need to install GMaps4Raisl gem modified
+
+    https://github.com/toshikomura/Google-Maps-for-Rails.git
+
 To use application need to execute
 
     rake db:migrate
     bundle
-    bundle exec rake assets:precompile
+    bundle install
+    bundle update
+    RAILS_ENV=development bundle exec rake assets:precompile
+    RAILS_ENV=development rake assets:precompile
     rails server -p"port"
+
+Or you can run
+
+    bash all_run.sh
+
+Just to run you can execute
+
+    bash run.sh
 
 On browser access
 
-    localhost:"port"
+    localhost:"port"/locations
+
+    Test on Google Chrome Version 37.0.2062.120 Ubuntu 12.04 (281580)
