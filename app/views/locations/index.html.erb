@@ -33,11 +33,51 @@
 </table>
 
 <br />
+
+<div id="request">
+    <p>Fields with "*" are required.<p>
+    <table>
+        <tr>
+            <td>* Origin:</td>
+            <td><input type="text" id="origin" name="origin"></td>
+            <td>(Curitiba) (Rua 15 de Novembro, 1000, Curitiba)</td>
+        </tr>
+        <tr>
+            <td>Intermediates (separete by "#"):</td>
+            <td><input type="text" id="intermediates" name="intermediates"></td>
+            <td>(Curitiba # São Paulo) (Rua 7 de Setembro, 4848, Curitiba # Rua 24 de Maio, 234, Curitiba)</td>
+        </tr>
+        <tr>
+            <td>* Destination:</td>
+            <td><input type="text" id="destination" name="destination"></td>
+            <td>(São Paulo) (Rua Manoel Ribas, 146, Curitiba)</td>
+        </tr>
+        <tr>
+            <td>Travel Mode:</td>
+            <td><input type="text" id="travel_mode" name="travel_mode"></td>
+            <td>(DRIVING) (BICYCLING) (TRANSIT) (WALKING)</td>
+        </tr>
+        <tr>
+            <td>Direction Color:</td>
+            <td><input type="text" id="direction_color" name="direction_color"></td>
+            <td>(red) (green)</td>
+        </tr>
+        <tr>
+            <td><button id="generateRoute">Generate Route</button></td>
+            <td><button id="clearDirectionsOfMap">Clear Directions Of Map</button></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
 <br />
 
 <div style='width: 800px;'>
   <div id="map" style='width: 800px; height: 400px;'></div>
 </div>
+
+<div id="directions_panel" style="margin:20px;background-color:#FFEE77;"></div>
 
 <br />
 <br />
